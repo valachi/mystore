@@ -11,8 +11,15 @@ gem 'spree', '1.1.2.rc1'
 group :development do
   gem 'quiet_assets'
   gem 'thin'
+  gem 'capistrano'
 end
 
+group :production do
+  gem 'unicorn'
+  gem 'mysql2'
+  gem 'foreman'
+  gem 'therubyracer' #only required for 0.70.x or later
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
