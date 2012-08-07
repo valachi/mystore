@@ -10,6 +10,8 @@ set :user, 'mystore'
 set :use_sudo, :false
 set :normalize_asset_timestamps, false
 
+ssh_options[:forward_agent] = true
+
 namespace :deploy do
   task(:start) {}
   task(:stop) {}
