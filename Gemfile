@@ -11,7 +11,6 @@ gem 'spree', '1.1.2.rc1'
 group :development do
   gem 'quiet_assets'
   gem 'thin'
-  gem 'capistrano'
 end
 
 group :production do
