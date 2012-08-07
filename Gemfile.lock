@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/spree/spree_i18n.git
+  revision: 7d291ecd11b271db39a0d350b94b91a922155554
+  specs:
+    spree_i18n (1.0.0)
+      i18n (~> 0.5)
+      spree (~> 1.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -238,6 +246,7 @@ DEPENDENCIES
   rails (= 3.2.6)
   sass-rails (~> 3.2.3)
   spree (= 1.1.2.rc1)
+  spree_i18n!
   therubyracer
   thin
   uglifier (>= 1.0.3)
