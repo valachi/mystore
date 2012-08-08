@@ -1,6 +1,13 @@
 ru: 
   'no': "Нет"
   'yes': "Да"
+  number:
+    currency:
+      format:
+        format: "%n %u"
+        unit: "руб."
+        precision: 0
+        delimiter: '.'
   5_biggest_spenders: "5 крупнейших покупателей"
   a_copy_of_all_mail_will_be_sent_to_the_following_addresses: "Копии всех писем будут отосланы на следующие адреса"
   abbreviation: "Аббревиатура"
@@ -304,7 +311,7 @@ ru:
   cart: "Корзина"
   categories: "Категории"
   category: "Категория"
-  change: "Изменить"
+  change: "Пересчитать"
   change_language: "Сменить язык"
   change_my_password: "Сменить мой пароль"
   charge_total: "Итого оплачено"
@@ -1028,10 +1035,12 @@ ru:
   unable_to_capture_credit_card: "Не удалось совершить платёж по кредитной карте."
   unable_to_connect_to_gateway: "Не удалось подключиться к платёжному шлюзу."
   unable_to_save_order: "Не удалось сохранить заказ."
-  under_paid: "Частично оплачен"
+  price_range: "Сортировать по цене"
+  under_price: "Ниже %{price}"
+  or_over_price: "Выше %{price}"
   units: "шт."
   unrecognized_card_type: "Неизвестный тип карты"
-  update: "Изменить"
+  update: "Пересчитать"
   update_password: "Обновить мой пароль и войти"
   updated_successfully: "Запись успешна изменена"
   updating: "Обновление"
