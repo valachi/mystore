@@ -21,3 +21,16 @@ namespace :deploy do
     run "touch #{current_path}/tmp/restart.txt"
   end
 end
+
+namespace :assets do
+  desc "create symlinks from shared resources to the release path"
+  task :symlink, :roles => :app do
+    release_image_dir = "#{release_path}/public/spree/"
+    shared_image_dir = "#{shared_path}/uploaded-files/spree/products/"
+    run "mkdir -p #{release_image_dir}"
+    run "mkdir -p #{shared_image_dir}"
+    run "ln -nfs #{shared_image_dir} #{release_image_dir}"
+
+  end
+end
+after "deploy:update_code", "assets:symlink"
